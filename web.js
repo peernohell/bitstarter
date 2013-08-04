@@ -3,7 +3,7 @@ fs = require('fs'),
 express = require('express'),
 app = {
 	indexHtml: "Loading ...",
-	port: process.env.PORT || 5000,
+	port: process.env.PORT || 8080,
 	express: express.createServer(express.logger()),
 	onIndexRead: function (err, data) {
 		if (err) {
